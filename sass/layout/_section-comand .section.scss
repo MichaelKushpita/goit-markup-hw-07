@@ -1,0 +1,59 @@
+/* ================== section   Наша команда==========*/
+.section-comand .section {
+  background: var(--secondary-background-color);
+}
+.section-comand {
+  background-color: var(--secondary-background-color);
+}
+.list-item {
+  display: block;
+  background: var(--white-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.comand-list .list-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.personal {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.comand-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.team-masters {
+  display: flex;
+  justify-content: center;
+}
+.item-comand {
+  margin-left: 10px;
+}
+.item-comand:first-child {
+  margin-left: 0;
+}
+.item-comand .icon-box {
+  width: 44px;
+  height: 44px;
+}
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: var(--icon-color);
+  transition: background-color 250ms var(--function-time), color 250ms var(--function-time);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+    color: var(--background-icon);
+  }
+}
+.masters-icon {
+  fill: currentColor;
+}
