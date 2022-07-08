@@ -1,10 +1,9 @@
-.page-header {
+.header {
   position: absolute;
   width: 100%;
   background-color: var(--white-text-color);
   border-bottom: 1px solid #ececec;
 }
-/* logo сайта */
 .logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
@@ -19,7 +18,6 @@
 .logostudiofooter {
   color: var(--white-text-color);
 }
-/* nav list========== */
 .navlist {
   display: flex;
   margin-left: 93px;
@@ -28,19 +26,19 @@
 .navlist li {
   margin-right: 50px;
 }
-.navlist-header,
-.navlist-header,
-.navlist-header:last-child {
+.navlist__item,
+.navlist__item,
+.navlist__item:last-child {
   margin-right: 0px;
 }
-.navlist.link {
+.navlist.__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.navlist-header,
-.navlist-header,
-.navlist-header {
+.navlist__item,
+.navlist__item,
+.navlist__item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -66,7 +64,7 @@
     color: var(--accent-color);
   }
 }
-.link-current {
+.navlist__link-current {
   position: relative;
   color: var(--accent-color);
   &::after {
@@ -84,8 +82,8 @@
   display: flex;
   align-items: center;
 }
-.headerlist-nav,
-.headerlist-nav {
+.menu-list__nav,
+.menu-list__nav {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -97,7 +95,7 @@
     color: var(--accent-color);
   }
 }
-.headerlist a {
+.menu-list a {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -113,7 +111,7 @@
     color: var(--accent-color);
   }
 }
-.headerlist {
+.menu-list {
   display: flex;
   margin-left: auto;
 }
@@ -121,7 +119,7 @@
   background: var(--background-icon);
   fill: currentColor;
 }
-.headerlist .item {
+.menu-list__.item {
   margin-left: 30px;
 }
 .container-hero {

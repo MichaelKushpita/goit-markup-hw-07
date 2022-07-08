@@ -178,9 +178,9 @@
 .input-check:checked + .text-check .check-icon {
   fill: var(--white-text-color);
   border-color: var(--accent-color);
-  & + & {
-    fill: var(--white-text-color);
-  }
+}
+.input-check:checked + .text-check .check-icon {
+  fill: var(--white-text-color);
 }
 .check-icon {
   border: 2px solid var(--primary-text-color);
