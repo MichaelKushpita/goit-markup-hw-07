@@ -67,6 +67,11 @@ ul {
   overflow: hidden;
 }
 
+.portfolio__resourse, .text-check, .modal-button-close, .input-subscribe, .button-sub, .footer-input::placeholder, .icon-footer, .clients-box, .icon-box, .thumb__application, .benefits, .button, .navlist, .container-hero, .menu-list a, .container-nav {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -162,11 +167,6 @@ ul {
   border-radius: 2px;
 }
 
-.container-nav {
-  display: flex;
-  align-items: center;
-}
-
 .menu-list__nav,
 .menu-list__nav {
   color: var(--title-text-color);
@@ -188,8 +188,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
   gap: 10px;
 }
 .menu-list a:hover, .menu-list a:focus, .menu-list a*:hover, .menu-list a:focus {
@@ -206,16 +204,12 @@ ul {
 }
 
 .container-hero {
-  display: flex;
-  align-items: center;
   flex-direction: column;
   background: #2f303a;
 }
 
 .navlist {
-  display: flex;
   margin-left: 93px;
-  align-items: center;
 }
 
 .menu-list {
@@ -243,8 +237,12 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -269,10 +267,8 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
+  letter-spacing: 0.06;
   text-align: center;
-  letter-spacing: 0.06em;
   transition: background-color 250ms var(--function-time), color 250ms var(--function-time);
 }
 .button:hover, .button:focus {
@@ -296,8 +292,6 @@ ul {
 .benefits {
   margin-bottom: 30px;
   height: 120px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   background: var(--secondary-background-color);
   border-radius: 4px;
@@ -344,8 +338,8 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .comand-title-list {
@@ -354,8 +348,8 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .comand-text-items {
@@ -363,8 +357,8 @@ ul {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .cards {
@@ -384,15 +378,13 @@ ul {
 }
 
 .thumb__application {
-  display: flex;
-  align-items: center;
   justify-content: center;
   position: absolute;
   width: 100%;
   height: 70px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
@@ -421,7 +413,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.comand__list .list-item {
+.section-comand__list .list-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
@@ -434,28 +426,26 @@ ul {
   padding-bottom: 30px;
 }
 
-.comand__list {
+.section-comand__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-.item-comand {
+.team-masters__comand {
   margin-left: 10px;
 }
 
-.item-comand:first-child {
+.team-masters__comand:first-child {
   margin-left: 0;
 }
 
-.item-comand .icon-box {
+.team-masters__comand .icon-box {
   width: 44px;
   height: 44px;
 }
 
 .icon-box {
-  display: flex;
-  align-items: center;
   justify-content: center;
   border-radius: 50px;
   color: var(--icon-color);
@@ -466,7 +456,7 @@ ul {
   color: var(--background-icon);
 }
 
-.masters-icon {
+.team-masters__icon {
   fill: currentColor;
 }
 
@@ -495,8 +485,6 @@ ul {
 
 .clients-box {
   height: 92px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   background: var(--background-icon);
   color: var(--icon-color);
@@ -612,8 +600,6 @@ ul {
 }
 
 .icon-footer {
-  display: flex;
-  align-items: center;
   justify-content: center;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.1);
@@ -648,8 +634,6 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -667,10 +651,8 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--white-text-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -680,11 +662,6 @@ ul {
 }
 .button-sub:hover, .button-sub:focus {
   background: #188ce8;
-}
-
-.input-subscribe {
-  display: flex;
-  align-items: center;
 }
 
 .footer-nav {
@@ -729,8 +706,6 @@ ul {
   background: var(--white-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 .modal-button-close:focus svg, .modal-button-close:hover svg {
@@ -747,8 +722,8 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  letter-spacing: 0.03;
   text-align: center;
-  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
   color: var(--primary-text-color);
@@ -822,7 +797,7 @@ ul {
 .modal-text::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -842,8 +817,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: color var(--function-time);
 }
@@ -912,8 +885,8 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
   border-radius: 4px;
@@ -934,12 +907,19 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  text-align: left;
   letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
 }
 
 .portfolio__text {
   color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.88;
   text-align: left;
@@ -1018,9 +998,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
   padding-right: 24px;
   padding-left: 24px;

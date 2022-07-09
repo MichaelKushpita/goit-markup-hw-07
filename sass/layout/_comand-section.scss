@@ -39,8 +39,7 @@
   height: 44px;
 }
 .icon-box {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   border-radius: 50px;
   color: var(--icon-color);

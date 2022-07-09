@@ -15,8 +15,7 @@
 }
 .clients-box {
   height: 92px;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   background: var(--background-icon);
   color: var(--icon-color);

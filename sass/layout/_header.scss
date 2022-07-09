@@ -74,8 +74,7 @@
   }
 }
 .container-nav {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
 }
 .menu-list__nav,
 .menu-list__nav {
@@ -92,12 +91,12 @@
 }
 .menu-list a {
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
+  @include font(500, 14px, 1.14, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  @extend %align-list;
   gap: 10px;
   &:hover,
   &:focus,
@@ -114,8 +113,7 @@
   margin-left: 30px;
 }
 .container-hero {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   flex-direction: column;
   background: #2f303a;
 }

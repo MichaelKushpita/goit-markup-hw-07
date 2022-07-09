@@ -34,18 +34,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
+  @extend %align-list;
   justify-content: center;
-  align-items: center;
 
   height: 100%;
   padding-right: 24px;
   padding-left: 24px;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font(400, 18px, 1.56, 0.03em);
+  // font-weight: 400;
+  // font-size: 18px;
+  // line-height: 1.56;
+  // letter-spacing: 0.03em;
   color: var(--white-text-color);
   background: var(--accent-color);
 

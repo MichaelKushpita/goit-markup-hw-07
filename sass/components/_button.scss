@@ -11,13 +11,14 @@
   color: var(--white-text-color);
   background-color: var(--accent-color);
   font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
+  @include font(700, 16px, 1.88, 0.06);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
+  @extend %align-list;
   text-align: center;
-  letter-spacing: 0.06em;
+
   transition: background-color 250ms var(--function-time), color 250ms var(--function-time);
   &:hover,
   &:focus {
