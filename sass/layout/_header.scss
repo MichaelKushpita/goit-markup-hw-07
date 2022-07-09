@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  // position: absolute;
   width: 100%;
   background-color: var(--white-text-color);
   border-bottom: 1px solid #ececec;
@@ -17,11 +17,6 @@
 }
 .logostudiofooter {
   color: var(--white-text-color);
-}
-.navlist {
-  display: flex;
-  margin-left: 93px;
-  align-items: center;
 }
 .navlist li {
   margin-right: 50px;
@@ -51,7 +46,7 @@
     color: var(--accent-color);
   }
 }
-.navlist a {
+.navlist__current {
   display: block;
   padding: 32px 0;
   color: var(--primary-text-color);
@@ -111,15 +106,11 @@
     color: var(--accent-color);
   }
 }
-.menu-list {
-  display: flex;
-  margin-left: auto;
-}
 .icon {
   background: var(--background-icon);
   fill: currentColor;
 }
-.menu-list__.item {
+.menu__item {
   margin-left: 30px;
 }
 .container-hero {

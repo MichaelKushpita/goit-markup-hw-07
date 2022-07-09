@@ -75,7 +75,6 @@ ul {
 }
 
 .header {
-  position: absolute;
   width: 100%;
   background-color: var(--white-text-color);
   border-bottom: 1px solid #ececec;
@@ -96,12 +95,6 @@ ul {
 
 .logostudiofooter {
   color: var(--white-text-color);
-}
-
-.navlist {
-  display: flex;
-  margin-left: 93px;
-  align-items: center;
 }
 
 .navlist li {
@@ -140,7 +133,7 @@ ul {
   color: var(--accent-color);
 }
 
-.navlist a {
+.navlist__current {
   display: block;
   padding: 32px 0;
   color: var(--primary-text-color);
@@ -150,7 +143,7 @@ ul {
   letter-spacing: 0.02em;
   transition: color 250ms var(--function-time);
 }
-.navlist a.link-current {
+.navlist__current.link-current {
   color: var(--accent-color);
 }
 
@@ -203,17 +196,12 @@ ul {
   color: var(--accent-color);
 }
 
-.menu-list {
-  display: flex;
-  margin-left: auto;
-}
-
 .icon {
   background: var(--background-icon);
   fill: currentColor;
 }
 
-.menu-list__.item {
+.menu__item {
   margin-left: 30px;
 }
 
@@ -222,6 +210,17 @@ ul {
   align-items: center;
   flex-direction: column;
   background: #2f303a;
+}
+
+.navlist {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  margin-left: auto;
 }
 
 .container-hero {
@@ -400,7 +399,7 @@ ul {
   color: var(--white-text-color);
 }
 
-.thumb .application {
+.thumb__work {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -422,7 +421,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.comand-list .list-item {
+.comand__list .list-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
@@ -430,20 +429,15 @@ ul {
   margin-right: 30px;
 }
 
-.personal {
+.section-comand__personal {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.comand-list {
+.comand__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-}
-
-.team-masters {
-  display: flex;
-  justify-content: center;
 }
 
 .item-comand {
@@ -474,6 +468,11 @@ ul {
 
 .masters-icon {
   fill: currentColor;
+}
+
+.team-masters {
+  display: flex;
+  justify-content: center;
 }
 
 /*========= секція постоянні клієнти====== */
@@ -929,7 +928,7 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-title {
+.portfolio__title {
   margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
@@ -939,7 +938,7 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.portfolio-text {
+.portfolio__text {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.88;
@@ -952,35 +951,35 @@ ul {
   padding-bottom: 22px;
 }
 
-.portfolio-list {
+.portfolio__wrap {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
 
-.portfolio-items {
+.portfolio__items {
   margin-bottom: 50px;
 }
 
-.portfolio-items {
+.portfolio__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.portfolio-items li:not(:last-child) {
+.portfolio__items li:not(:last-child) {
   margin-right: 8px;
 }
 
-.gallery-link {
+.portfolio__gallery-link {
   display: block;
 }
-.gallery-link:hover, .gallery-link:focus {
+.portfolio__gallery-link:hover, .portfolio__gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* -------------------------container================= */
-.portfolio-flex {
+.portfolio__flex {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -990,32 +989,32 @@ ul {
   margin-bottom: -30px;
 }
 
-.portfolio-flex > .gallery-list {
+.portfolio__flex > .potrfolio__list {
   flex-basis: calc(33.3333333333% - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio-flex > .gallery-list:nth-child(3n) {
+.portfolio__flex > .portfolio__list:nth-child(3n) {
   margin-right: 0;
 }
 
-.portfolio-flex > .gallery-list:nth-last-child(-n+3) {
+.portfolio__flex > .portfolio__list:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
 
-.gallery-link:hover .portfolio-resourse,
-.gallery-link:focus .portfolio-resourse {
+.portfolio__gallery-link:hover .portfolio__resourse,
+.portfolio__gallery-link:focus .portfolio__resourse {
   transform: translateY(0);
   opacity: 0.9;
 }
 
-.thumb-card {
+.portfolio__thumb-card {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-resourse {
+.portfolio__resourse {
   position: absolute;
   top: 0;
   left: 0;
