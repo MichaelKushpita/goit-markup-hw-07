@@ -15,30 +15,30 @@
 .section-comand__list .list-item {
   flex-basis: calc((100% - 90px) / 4);
 }
-.list-item:not(:last-child) {
+.section__comand:not(:last-child) {
   margin-right: 30px;
 }
 .section-comand__personal {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 }
 .section-comand__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
-
-.team-masters__comand {
+.team__masters {
   margin-left: 10px;
 }
-.team-masters__comand:first-child {
+.team__masters:first-child {
   margin-left: 0;
 }
 .team-masters__comand .icon-box {
   width: 44px;
   height: 44px;
 }
-.icon-box {
+.team-masters__soc {
   @extend %align-list;
   justify-content: center;
   border-radius: 50px;

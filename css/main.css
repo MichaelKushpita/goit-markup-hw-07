@@ -67,7 +67,7 @@ ul {
   overflow: hidden;
 }
 
-.portfolio__resourse, .text-check, .modal-button-close, .input-subscribe, .button-sub, .footer-input::placeholder, .icon-footer, .clients-box, .icon-box, .thumb__application, .benefits, .button, .navlist, .container-hero, .menu-list a, .container-nav {
+.portfolio__resourse, .text-check, .modal-button-close, .input-subscribe, .button-sub, .footer-input::placeholder, .icon-footer, .clients-box, .team-masters__soc, .thumb__application, .benefits, .button, .navlist, .container-hero, .menu-list a, .container-nav {
   display: flex;
   align-items: center;
 }
@@ -417,13 +417,14 @@ ul {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.list-item:not(:last-child) {
+.section__comand:not(:last-child) {
   margin-right: 30px;
 }
 
 .section-comand__personal {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .section-comand__list {
@@ -432,11 +433,11 @@ ul {
   list-style: none;
 }
 
-.team-masters__comand {
+.team__masters {
   margin-left: 10px;
 }
 
-.team-masters__comand:first-child {
+.team__masters:first-child {
   margin-left: 0;
 }
 
@@ -445,13 +446,13 @@ ul {
   height: 44px;
 }
 
-.icon-box {
+.team-masters__soc {
   justify-content: center;
   border-radius: 50px;
   color: var(--icon-color);
   transition: background-color 250ms var(--function-time), color 250ms var(--function-time);
 }
-.icon-box:hover, .icon-box:focus {
+.team-masters__soc:hover, .team-masters__soc:focus {
   background: var(--accent-color);
   color: var(--background-icon);
 }
@@ -869,17 +870,17 @@ ul {
   fill: transparent;
 }
 
-.portfolio-button.active {
+.portfolio__button--active {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-button {
+.portfolio__button {
   padding: 6px 22px;
 }
 
-.portfolio-button {
+.portfolio__button {
   display: block;
   font-family: "Roboto";
   font-weight: 500;
@@ -893,11 +894,11 @@ ul {
   border: 0;
   transition: background-color 250ms var(--function-time), color 250ms var(--function-time), box-shadow 250ms var(--function-time);
 }
-.portfolio-button:hover, .portfolio-button:focus {
+.portfolio__button:hover, .portfolio__button:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
-.portfolio-button:hover, .portfolio-button:focus {
+.portfolio__button:hover, .portfolio__button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
