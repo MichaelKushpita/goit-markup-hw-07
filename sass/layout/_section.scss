@@ -39,9 +39,10 @@
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
-  margin-left: -30px;
+  gap: 30px;
+  // margin-left: -30px;
 }
 .section-list > .list-item {
   flex-basis: calc((100% / 4 - 30px));
-  margin-left: 30px;
+  // margin-left: 30px;
 }

@@ -5,10 +5,8 @@
     0px 2px 2px rgb(0 0 0 / 12%);
 }
 .portfolio__button {
-  padding: 6px 22px;
-}
-.portfolio__button {
   display: block;
+  padding: 6px 22px;
   font-family: 'Roboto';
   @include font(500, 16px, 1.62, 0.03em);
   // font-weight: 500;

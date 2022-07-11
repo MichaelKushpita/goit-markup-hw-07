@@ -15,7 +15,7 @@
 .section-comand__list .list-item {
   flex-basis: calc((100% - 90px) / 4);
 }
-.section__comand:not(:last-child) {
+.section-comand__list:not(:last-child) {
   margin-right: 30px;
 }
 .section-comand__personal {
@@ -27,14 +27,15 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
 }
-.team__masters {
+.team__comand {
   margin-left: 10px;
 }
-.team__masters:first-child {
+.team__comand:first-child {
   margin-left: 0;
 }
-.team-masters__comand .icon-box {
+.team__comand .team-masters__soc {
   width: 44px;
   height: 44px;
 }
