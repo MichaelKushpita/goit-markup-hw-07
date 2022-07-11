@@ -3,10 +3,11 @@
 .clients-list {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
-.clients-item {
-  margin-left: 30px;
-}
+// .clients-item {
+// margin-left: 30px;
+
 .clients-item {
   flex-basis: calc((100% - 150px) / 6);
 }

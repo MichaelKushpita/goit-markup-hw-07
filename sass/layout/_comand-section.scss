@@ -21,7 +21,25 @@
 .section-comand__personal {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.section-comand__title {
+  margin-bottom: 10px;
+  @include font(500, 16px, 1.19, 0.03em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
   text-align: center;
+  color: var(--primary-text-color);
+}
+.section-comand__text {
+  // margin-bottom: 16px;
+  @include font(null, 16px, 1.19, 0.03em);
+  // font-size: 16px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
 }
 .section-comand__list {
   display: flex;
