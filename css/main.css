@@ -415,14 +415,32 @@ ul {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.section__comand:not(:last-child) {
+.section-comand__list:not(:last-child) {
   margin-right: 30px;
 }
 
 .section-comand__personal {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.section-comand__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   text-align: center;
+  color: var(--primary-text-color);
+}
+
+.section-comand__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
 }
 
 .section-comand__list {
@@ -432,15 +450,15 @@ ul {
   gap: 30px;
 }
 
-.team__masters {
+.team__comand {
   margin-left: 10px;
 }
 
-.team__masters:first-child {
+.team__comand:first-child {
   margin-left: 0;
 }
 
-.team-masters__comand .icon-box {
+.team__comand .team-masters__soc {
   width: 44px;
   height: 44px;
 }
@@ -469,10 +487,7 @@ ul {
 .clients-list {
   display: flex;
   justify-content: center;
-}
-
-.clients-item {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 .clients-item {
@@ -876,11 +891,8 @@ ul {
 }
 
 .portfolio__button {
-  padding: 6px 22px;
-}
-
-.portfolio__button {
   display: block;
+  padding: 6px 22px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;

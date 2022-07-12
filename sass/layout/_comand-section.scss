@@ -33,7 +33,7 @@
   color: var(--primary-text-color);
 }
 .section-comand__text {
-  // margin-bottom: 16px;
+  margin-bottom: 16px;
   @include font(null, 16px, 1.19, 0.03em);
   // font-size: 16px;
   // line-height: 1.19;
